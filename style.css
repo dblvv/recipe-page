@@ -8,6 +8,11 @@
     src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --Nutmeg: hsl(14, 45%, 36%);
     --Dark-Raspberry: hsl(332, 51%, 32%);
@@ -53,38 +58,55 @@ img {
     height: 100%;
     width: 100%;
     object-fit: contain;
+
+    margin-bottom: 15px;
 }
 
 h1 {
     font-family: "Young Serif";
     color: var(--Dark-Charcoal);
     font-size: 2.4em;
+    margin: 25px 0;
 }
 
 h2 {
     font-family: "Young Serif";
     color: var(--Nutmeg);
+    margin: 23px 0;
 }
 
 h3 {
     color: var(--Dark-Raspberry);
+    padding: 15px 0;
+}
+
+ul,
+ol {
+    padding: 0 20px 20px;
+}
+
+li {
+    margin: 10px;
 }
 
 hr {
-    background-color: var(--Wenge-Brown);
+    background-color: var(--Light-Grey);
     width: 95%;
-    height: 0.1px;
+    height: 1px;
     border: none;
+    /* size: 1px; */
+    /* border: solid; */
 }
 
 .callout {
     background-color: var(--Rose-White);
-    padding: 20px;
+    margin-top: 20px;
+    padding: 0 20px 0;
     border-radius: 1rem;
 }
 
 footer {
-    margin-top: 10px;
+    margin: 15px 0 50px;
     color: black;
 }
 
