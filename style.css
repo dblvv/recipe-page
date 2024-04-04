@@ -43,7 +43,7 @@ body {
 main {
     background-color: var(--White);
     margin: 70px 0px 0px;
-    width: 650px;
+    max-width: 650px;
     padding: 30px;
 
     display: flex;
@@ -60,6 +60,19 @@ img {
     object-fit: contain;
 
     margin-bottom: 15px;
+}
+
+@media (max-width: 710px) {
+    main {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    img {
+        border-radius: 0;
+        width: 100vw;
+        margin: -30px -30px 0 -30px;
+    }
 }
 
 h1 {
@@ -89,6 +102,7 @@ li {
     margin: 10px;
     padding-left: 20px;
 }
+
 li::marker {
     font-weight: 600;
     color: var(--Nutmeg);
@@ -115,6 +129,7 @@ td {
 tbody>tr:first-child>td {
     border-top: none;
 }
+
 tr>td:last-child {
     font-weight: 800;
     color: var(--Nutmeg);
