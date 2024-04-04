@@ -87,15 +87,37 @@ ol {
 
 li {
     margin: 10px;
+    padding-left: 20px;
+}
+li::marker {
+    font-weight: 600;
+    color: var(--Nutmeg);
 }
 
 hr {
     background-color: var(--Light-Grey);
-    width: 95%;
     height: 1px;
     border: none;
     /* size: 1px; */
     /* border: solid; */
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+td {
+    border-top: 1px solid var(--Light-Grey);
+    padding: 10px 40px;
+}
+
+tbody>tr:first-child>td {
+    border-top: none;
+}
+tr>td:last-child {
+    font-weight: 800;
+    color: var(--Nutmeg);
 }
 
 .callout {
